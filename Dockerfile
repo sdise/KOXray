@@ -25,5 +25,3 @@ RUN apk update && \
 RUN chmod +x /start.sh
 
 CMD /start.sh
-
-RUN bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
