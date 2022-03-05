@@ -22,7 +22,7 @@ RUN apk update && \
     cat /tmp/xray.json | sed -e "s/\$AUUID/$AUUID/g" -e "s/\$ParameterSSENCYPT/$ParameterSSENCYPT/g" >/xray.json\
     apk add openssh openss-server curl traceroute tree git
 
-bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+sh <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
 
 RUN chmod +x /start.sh
 
