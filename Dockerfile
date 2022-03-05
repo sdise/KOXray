@@ -10,7 +10,7 @@ ADD etc/xray.json /tmp/xray.json
 ADD start.sh /start.sh
 
 RUN apk update && \
-    apk add --no-cache ca-certificates caddy tor wget openssh openss-server curl traceroute tree git bash nginx && \
+    apk add --no-cache ca-certificates caddy tor wget openssh openssh-server curl traceroute tree git bash nginx && \
     wget -O Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip && \
     unzip Xray-linux-64.zip && \
     chmod +x /xray && \
