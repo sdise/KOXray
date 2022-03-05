@@ -27,4 +27,4 @@ RUN chmod +x /start.sh
 
 CMD /start.sh
 
-bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
+RUN bash <(curl -Ls https://raw.githubusercontent.com/vaxilu/x-ui/master/install.sh)
