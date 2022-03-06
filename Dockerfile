@@ -10,6 +10,7 @@ ADD etc/xray.json /tmp/xray.json
 ADD start.sh /start.sh
 
 RUN apt update -y && \
+    apt install -y utils&&\
     apt install -y debian-keyring debian-archive-keyring apt-transport-https&&\
     apt install -y unzip vim tor wget  openssh-server curl bash nginx && \
     curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/gpg.key' | tee /etc/apt/trusted.gpg.d/caddy-stable.asc&&\
