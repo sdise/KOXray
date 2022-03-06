@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:latest
 
 ARG AUUID="12345678-1234-1234-1234-123456789abc"
 ARG CADDYIndexPage="https://github.com/AYJCSGM/mikutap/archive/master.zip"
