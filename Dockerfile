@@ -9,7 +9,7 @@ ADD etc/Caddyfile /tmp/Caddyfile
 ADD etc/xray.json /tmp/xray.json
 ADD start.sh /start.sh
 
-RUN apt install -y update && \
+RUN apt update -y && \
     apt install -y unzip vim caddy tor wget openssh openssh-server curl bash nginx && \
     wget -O Xray-linux-64.zip https://github.com/XTLS/Xray-core/releases/latest/download/Xray-linux-64.zip && \
     unzip Xray-linux-64.zip && \
